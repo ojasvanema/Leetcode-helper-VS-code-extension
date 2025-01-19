@@ -1,6 +1,6 @@
-# cph-leetcode README
+# README
 
-This is the README for your extension "cph-leetcode". After writing up a brief description, we recommend including the following sections.
+This extension allows you to fetch testcases from leetcode problem and run it locally in VS code.
 
 ## Features
 

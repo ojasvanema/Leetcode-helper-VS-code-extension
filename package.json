@@ -1,0 +1,52 @@
+{
+  "name": "cph-leetcode",
+  "displayName": "cph-leetcode",
+  "description": "Extracts test cases from leetcode problems to run them locally in different languages",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cph-leetcode.searchSomething",
+        "title": "Search something"
+      },
+      {
+        "command": "cph-leetcode.CPH-fetch-testcases",
+        "title": "Fetch testcases"
+      },
+      {
+        "command": "cph-leetcode.CPH-run-testcases",
+        "title": "Run Code Against Test Cases"
+      },
+      {
+        "command":"cph-leetcode.getOpenFolderPath",
+        "title" : "Get the path of open folder"
+      },
+      {
+        "command":"cph-leetcode.selectLanguage",
+        "title" : "Select/Change the language in which problem is submitted"
+      }
+
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

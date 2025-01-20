@@ -3,7 +3,7 @@ const vscode = require('vscode');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { execFile, exec } = require('child_process');
+
 	
 
 /**
@@ -225,7 +225,7 @@ public class solution { // Class name matches the file name
 		const hard_coded_dir = openFolderPath;
 	  
 		  runPythonScript(
-			'D:\\Ojasv\\coding\\vs-code-extension folder\\TInkering project\\cph-leetcode\\fetching-testcases.py',
+			'D:\\Ojasv\\coding\\vs-code-extension folder\\TInkering project\\cph-leetcode\\fetching-testcases.py', //replace with appropriate path
 			[searchQuery , hard_coded_dir ],
 			async (err) => {
 				if (err) {
